@@ -19,10 +19,13 @@ while Secured == false do
 end
 term.clear()
 term.setCursorPos(1, 1)
+
+term.setBackgroundColor(colours.lime)
+term.clear()
+sleep(1)
+term.setBackgroundColor(colours.black)
+term.clear()
+
 term.setTextColour(colours.green)
 print("Access granted")
 term.setTextColour(colours.white)
-
-term.setBackgroundColor(colours.lime)
-sleep(1)
-term.setBackgroundColor(colours.black)
