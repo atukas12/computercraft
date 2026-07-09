@@ -11,7 +11,7 @@ write("Enter Pasword: ")
 
 while Secured == false do
     term.clear()
-term.setCursorPos(15, 9)
+    term.setCursorPos(15, 9)
     input = read("*")
 
     if input ~= code then
