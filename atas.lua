@@ -9,19 +9,18 @@ Secured = false
 
 write("Enter Pasword: ")
 
-while Secured == false do
-    term.clear()
-    term.setCursorPos(15, 9)
-    input = read("*")
 
-    if input ~= code then
-        term.setTextColour(colours.red)
-        write("Wrong pasword try again: ")
-        term.setTextColour(colours.white)
-    else
-        Secured = true
-    end
-end
+term.clear()
+term.setCursorPos(15, 9)
+input = read("*")
+
+if input ~= code then
+    term.setTextColour(colours.green)
+    print("Incorect")
+    sleep(2)
+    shell.run("atas.lua")
+else
+
 
 -- Show the user that the pasword was correct
 term.clear()
@@ -29,7 +28,7 @@ term.setCursorPos(1, 1)
 
 term.setBackgroundColor(colours.green)
 term.clear()
-sleep(0.5)
+sleep(1)
 term.setBackgroundColor(colours.black)
 term.clear()
 
