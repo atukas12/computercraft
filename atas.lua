@@ -1,5 +1,5 @@
 --git add .
---git commit -m "Initial upload"
+--git commit -m "update"
 --git push
 
 code = "gaj12A"
@@ -7,15 +7,13 @@ Secured = false
 
 -- terminal size 51,19
 
-write("Enter Pasword: ")
-
-
 term.clear()
 term.setCursorPos(15, 9)
+write("Enter Pasword: ")
 input = read("*")
 
 if input ~= code then
-    term.setTextColour(colours.green)
+    term.setTextColour(colours.red)
     print("Incorect")
     sleep(2)
     shell.run("atas.lua")
