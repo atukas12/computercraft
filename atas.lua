@@ -17,4 +17,6 @@ while Secured == false do
 end
 term.clear()
 term.setCursorPos(1, 1)
+term.setTextColour(colours.green)
 print("Access granted")
+term.setTextColour(colours.white)
