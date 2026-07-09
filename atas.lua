@@ -14,7 +14,9 @@ input = read("*")
 
 if input ~= code then
     term.setTextColour(colours.red)
+    term.setCursorPos(15, 10)
     print("Incorect")
+    term.setTextColour(colours.white)
     sleep(2)
     shell.run("atas.lua")
 end
