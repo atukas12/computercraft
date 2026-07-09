@@ -2,14 +2,16 @@
 --git commit -m "Initial upload"
 --git push
 
-term.clear()
-term.setCursorPos(1, 1)
-
 code = "gaj12A"
 Secured = false
 
+-- terminal size 51,19
+
 write("Enter Pasword: ")
+
 while Secured == false do
+    term.clear()
+term.setCursorPos(15, 9)
     input = read("*")
 
     if input ~= code then
@@ -20,12 +22,14 @@ while Secured == false do
         Secured = true
     end
 end
+
+-- Show the user that the pasword was correct
 term.clear()
 term.setCursorPos(1, 1)
 
-term.setBackgroundColor(colours.lime)
+term.setBackgroundColor(colours.green)
 term.clear()
-sleep(1)
+sleep(0.5)
 term.setBackgroundColor(colours.black)
 term.clear()
 
