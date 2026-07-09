@@ -2,6 +2,9 @@
 --git commit -m "Initial upload"
 --git push
 
+term.clear()
+term.setCursorPos(1, 1)
+
 code = "gaj12A"
 Secured = false
 
