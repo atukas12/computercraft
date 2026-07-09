@@ -19,7 +19,7 @@ if input ~= code then
     print("Incorect")
     sleep(2)
     shell.run("atas.lua")
-else
+end
 
 
 -- Show the user that the pasword was correct
