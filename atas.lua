@@ -8,13 +8,13 @@ Secured = false
 -- terminal size 51,19
 
 term.clear()
-term.setCursorPos(15, 9)
+term.setCursorPos(17, 9)
 write("Enter Pasword: ")
 input = read("*")
 
 if input ~= code then
     term.setTextColour(colours.red)
-    term.setCursorPos(15, 10)
+    term.setCursorPos(20, 10)
     print("Incorect")
     term.setTextColour(colours.white)
     sleep(2)
@@ -26,12 +26,7 @@ end
 term.clear()
 term.setCursorPos(1, 1)
 
-term.setBackgroundColor(colours.green)
-term.clear()
-sleep(1)
-term.setBackgroundColor(colours.black)
-term.clear()
-
 term.setTextColour(colours.green)
 print("Access granted")
 term.setTextColour(colours.white)
+
